@@ -67,34 +67,24 @@ export const SketchBavbar = () => {
           </ul>
         </nav>
       </header>
-      <section>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-      </section>
-      <section>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-        <h1>Hello Sketch~~</h1>
-      </section>
+      <main>
+        <section className="container">
+          <h1>The base products start with Sketch</h1>
+          <p>
+            Create,prototype,collaborate,and bring your ideas to lift with the
+            design platform used by over one million people —— from freelancers,
+            to the world's largest teams.
+          </p>
+        </section>
+        <section className="container">
+          <h1>The base products start with Sketch</h1>
+          <p>
+            Create,prototype,collaborate,and bring your ideas to lift with the
+            design platform used by over one million people —— from freelancers,
+            to the world's largest teams.
+          </p>
+        </section>
+      </main>
       <div className={`overlay ${visible ? "active" : ""}`}></div>
       <style jsx global>
         {`
@@ -119,8 +109,9 @@ export const SketchBavbar = () => {
           text-decoration: none;
         }
         header {
-          position: fixed;
+          position: relative;
           width: 100%;
+          top: 0;
           background-color: #fff;
           z-index: 1000;
         }
@@ -148,6 +139,8 @@ export const SketchBavbar = () => {
         .nav-list a {
           padding: 0 1.4rem;
           color: #333;
+          font-size: 1.2rem;
+          font-weight: 500;
         }
         .nav-list .sub-menu {
           position: absolute;
@@ -177,9 +170,11 @@ export const SketchBavbar = () => {
           display: block;
           color: #aaa;
         }
-        section {
-          height: 100vh;
-          background-color: #efc;
+        main > section {
+          padding: 10rem 0 8rem;
+        }
+        section h1 {
+          font-size: 4rem;
         }
         .overlay {
           position: fixed;
