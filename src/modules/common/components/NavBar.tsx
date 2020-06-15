@@ -1,5 +1,5 @@
 export interface NavBarProps {}
-import styles from "./Navbar.module.scss";
+import styles from "./NavBar.module.scss";
 export const NavBar = () => {
   return (
     <header className={styles.header}>
