@@ -36,16 +36,17 @@
       }
     }
   }
-  // TODO: indicator
-  // &:before {
-  //   content: "";
-  //   width: 0;
-  //   bottom: -0.2rem;
-  //   position: absolute;
-  //   border-bottom: 2px solid #a73a41;
-  //   border-radius: 2px;
-  // }
 }
+.indicator {
+  width: 0;
+  left: 0;
+  bottom: -0.5rem;
+  position: absolute;
+  border-bottom: 2px solid #a73a41;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+
 @media (min-width: 1200px) {
   .nav {
     width: 1170px;
