@@ -1,14 +1,13 @@
+import React, { HTMLAttributes } from "react";
 import NavBar from "./NavBar";
-
-export interface LayoutProps {}
-export const Layout = () => {
+import styles from "./Layout.module.scss";
+export interface LayoutProps extends HTMLAttributes<HTMLDivElement> {}
+export const Layout = ({ children, ...rest }: LayoutProps) => {
   return (
     <div>
       <NavBar />
-      <main>
-        <section style={{ height: "100vh" }}></section>
-        <section style={{ height: "100vh" }}></section>
-        <section style={{ height: "100vh" }}></section>
+      <main className={styles.main} {...rest}>
+        {children}
       </main>
     </div>
   );

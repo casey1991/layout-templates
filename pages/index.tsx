@@ -1,4 +1,8 @@
-import { Layout } from "../src";
+import { Layout, ChipSection } from "../src";
 export default function Home() {
-  return <Layout></Layout>;
+  return (
+    <Layout>
+      <ChipSection />
+    </Layout>
+  );
 }
