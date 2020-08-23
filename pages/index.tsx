@@ -1,8 +1,7 @@
-import { Layout, ChipSection } from "../src";
+import { Typography } from "../src";
+
 export default function Home() {
   return (
-    <Layout>
-      <ChipSection />
-    </Layout>
+    <Typography>Almost before we knew it, we had left the ground</Typography>
   );
 }

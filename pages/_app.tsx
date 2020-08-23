@@ -1,7 +1,25 @@
+import React from "react";
 import { AppProps } from "next/app";
-// sass
-import "../public/styles/index.scss";
+// TAG: INJECT_JSS START
+import { ThemeProvider } from "react-jss";
+// TAG: INJECT_JSS END
+import { defaultTheme } from "../src";
 const App = ({ Component, pageProps }: AppProps) => {
-  return <Component {...pageProps} />;
+  React.useEffect(() => {
+    // TAG: INJECT_JSS START
+    // remove server side jss styles
+    const style = document.getElementById("server-side-styles");
+    if (style) {
+      style?.parentNode?.removeChild(style);
+    }
+    // TAG: INJECT_JSS END
+  }, []);
+  return (
+    // TAG: INJECT_JSS START
+    <ThemeProvider theme={defaultTheme}>
+      <Component {...pageProps} />
+    </ThemeProvider>
+    // TAG: INJECT_JSS END
+  );
 };
 export default App;
