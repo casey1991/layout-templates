@@ -10,7 +10,6 @@ export const defaultTheme: ITheme = {
   styles: {
     typography: {
       common: {
-        fontFamily: "'Poppins', sans-serif",
         color: "rgba(0,0,0,0.87)",
         fontSize: "16px",
         lineHeight: "21px",
