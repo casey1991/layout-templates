@@ -3,7 +3,7 @@ import { AppProps } from "next/app";
 // TAG: INJECT_JSS START
 import { ThemeProvider } from "react-jss";
 // TAG: INJECT_JSS END
-import { defaultTheme } from "../src";
+import { defaultTheme } from "@lib/theme";
 const App = ({ Component, pageProps }: AppProps) => {
   React.useEffect(() => {
     // TAG: INJECT_JSS START

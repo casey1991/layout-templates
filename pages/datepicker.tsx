@@ -1,6 +1,6 @@
 import React from "react";
 import { createUseStyles, jss } from "react-jss";
-import { DatePicker } from "../src";
+import DatePicker from "@components/DatePicker";
 // Option: 1
 jss
   .createStyleSheet({
